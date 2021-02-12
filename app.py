@@ -41,7 +41,7 @@ def add_new_record():
 
         finally:
             con.close()
-            return render_template('result.html', msg=msg)
+            return render_template('results.html', msg=msg)
 
 
 @app.route('/show-records/', methods=["GET"])
